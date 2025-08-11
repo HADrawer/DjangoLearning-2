@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Man</title>
+</head>
+<body>
+    <h1>Hello World To Hashem Django Site</h1>
+    <p> My name is  {% if name %} {{ name }} {% else %} World! {% endif %} </p>
+    <ul>
+        {% for category in categories %}
+            <li> {{category}} </li>
+        {% empty %}
+        <p>There is no catagory</p>
+        {% endfor %}
+       
+        
+
+    </ul>
+</body>
+</html>
